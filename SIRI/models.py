@@ -14,4 +14,13 @@ class Contact(models.Model):
     desc = models.TextField()
     date = models.DateField()
 
- 
+class User(models.Model):
+    name = models.CharField(max_length=15)
+    phone = models.CharField(max_length=12)
+    email = models.CharField(max_length=35)
+    password = models.CharField(max_length=15)
+
+
+
+
+
